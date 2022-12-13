@@ -4,22 +4,13 @@ string[] texto2 = File.ReadAllLines(@"C:\Users\felip\Documents\DocumentosCompara
 Console.WriteLine("Conteúdo do primeiro documento: ");
 foreach (string linhas1 in texto1)
 {
-    foreach (string linhas2 in texto2)
-    {
-    Console.WriteLine(linhas2);
-    }
+    
     Console.WriteLine(linhas1);
 }
 Console.WriteLine("===============================");
 Console.WriteLine("Conteúdo do segundo documento: ");
-
-//foreach(string comparar in linhas1)
-//{
-//if (linhas1 == linhas2)
-//{
-//
-//}
-
-//}
-
+foreach (string linhas2 in texto2)
+    {
+    Console.WriteLine(linhas2);
+    }
 Console.ReadKey();
